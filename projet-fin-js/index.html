@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquette</title>
+    <link href="./assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/isotope.min.js"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        html {
+  scroll-behavior: smooth;
+}
+
+       body{
+        font-family: "Poppins", sans-serif;
+  font-style: normal;
+       }
+        .swiper-slide {
+            border-radius: 20px;
+            color: white;
+        }
+
+        .swiper-slide:first-child {
+            background-color: rgba(0, 0, 0, 0.178);
+
+        }
+
+        .swiper-slide h2 {
+            font-weight: 800;
+            font-size: 30px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fun-facts {
+            position: relative;
+            padding: 120px 0px 80px 0px;
+            overflow: hidden;
+
+        }
+
+        .fun-facts:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            width: 95%;
+            height: 100%;
+            background-color: #7a6ad8;
+            content: '';
+            border-top-right-radius: 500px;
+            border-bottom-right-radius: 500px;
+        }
+
+        .fun-facts:after {
+            background: url('./assets/images/contact-dec-01.png');
+            position: absolute;
+            left: 15%;
+            opacity: 0.5;
+            top: 0;
+            width: 318px;
+            height: 119px;
+            content: '';
+            z-index: 2;
+        }
+
+        .fun-facts .counter {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .fun-facts h2 {
+            color: #fff;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .fun-facts h2::after {
+            content: '+';
+            margin-left: 5px;
+        }
+
+        .fun-facts p {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        .testimonials {
+            position: relative;
+            padding: 80px 0px;
+            margin-top: 150px;
+        }
+
+        .testimonials:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            width: 65%;
+            height: 100%;
+            background-color: #f1f0fe;
+            content: '';
+            border-top-left-radius: 500px;
+            border-bottom-left-radius: 500px;
+        }
+/* 
+        
+
+        .testimonials .section-heading {
+            margin-bottom: 0px;
+            margin-left: 60px;
+            vertical-align: middle;
+        }
+
+        .testimonials .section-heading p {
+            margin-top: 50px;
+        }
+
+        .testimonials .item {
+            background-color: #7a6ad8;
+            border-radius: 25px;
+            padding: 80px;
+        }
+
+        .testimonials .item p {
+            font-size: 18px;
+            line-height: 40px;
+            color: #fff;
+            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .testimonials .item img {
+            border-radius: 50%;
+            max-width: 100px;
+            float: left;
+            margin-right: 25px;
+        }
+
+        .testimonials .item span {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .testimonials .item h4 {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .testimonials .owl-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-5px);
+            right: -25px;
+            text-align: right;
+        }
+
+        .testimonials .owl-nav .owl-prev i,
+        .testimonials .owl-nav .owl-next i {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 24px;
+            display: inline-block;
+            color: #7a6ad8;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+            opacity: 1;
+            transition: all .3s;
+        }
+
+        .testimonials .owl-nav .owl-prev i {
+            position: absolute;
+            bottom: 65px;
+        }
+
+        .testimonials .owl-nav .owl-prev i:hover,
+        .testimonials .owl-nav .owl-next i:hover {
+            opacity: 1;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        } */
+
+
+        @media screen and (max-width: 990px) {
+            .contact-us::before {
+                display: none;
+            }
+            .testimonials::before {
+                display: none;
+            }
+            /* 
+
+            .testimonials {
+                margin-top: -50px;
+                padding: 0px;
+            }
+
+            .testimonials .section-heading {
+                margin-left: 0px;
+                margin-top: 40px;
+            }
+
+            .testimonials .item {
+                padding: 40px 40px 60px 40px;
+            }
+
+            .testimonials .item h4 {
+                font-size: 17px;
+            }
+
+            .testimonials .item img {
+                margin-right: 15px;
+            }
+
+            .testimonials .owl-nav {
+                display: none;
+            } */
+        }
+
+
+        .contact-us {
+            margin-top: 80px;
+            position: relative;
+            padding: 50px 0px;
+        }
+
+        .contact-us:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            width: 65%;
+            height: 100%;
+            background-color: #f1f0fe;
+            content: '';
+            border-top-right-radius: 500px;
+            border-bottom-right-radius: 500px;
+        }
+
+
+        .contact-us .contact-us-content {
+            border-radius: 25px;
+            padding: 40px;
+            background-color: #7a6ad8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-us .contact-us-content::before {
+            background: url(./assets/images/contact-dec-01.png);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-149px);
+            opacity: 0.5;
+            top: 0;
+            width: 318px;
+            height: 119px;
+            content: '';
+            z-index: 2;
+        }
+
+        .contact-us .contact-us-content::after {
+            background: url(./assets/images/contact-dec-02.png);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 183px;
+            height: 149px;
+            content: '';
+            z-index: 2;
+        }
+
+
+        #contact-form input {
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgba(249, 235, 255, 0.15);
+            border: none;
+            outline: none;
+            font-weight: 300;
+            padding: 0px 20px;
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 3;
+        }
+
+        #contact-form input::placeholder {
+            color: #fff;
+        }
+
+        #contact-form textarea {
+            width: 100%;
+            height: 120px;
+            border-radius: 25px;
+            background-color: rgba(249, 235, 255, 0.15);
+            border: none;
+            outline: none;
+            font-weight: 300;
+            padding: 20px;
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 3;
+        }
+
+        #contact-form textarea::placeholder {
+            color: #fff;
+        }
+
+        #contact-form button {
+            border: none;
+            height: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #fff;
+            padding: 0px 25px;
+            border-radius: 25px;
+            color: #7a6ad8;
+            transition: all .4s;
+            position: relative;
+            z-index: 3;
+        }
+
+        #contact-form button:hover {
+            opacity: 0.8;
+        }
+
+        .contact-us-content .more-info {
+            text-align: center;
+            background: rgb(85, 0, 227);
+            background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%);
+            border-radius: 0px 0px 23px 23px;
+            padding: 45px 30px 15px 30px;
+        }
+
+        .contact-us-content .more-info .info-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-us-content .more-info i {
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .contact-us-content .more-info h4 a {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+
+        footer {
+            position: relative;
+            background-color: #7a6ad8;
+            vertical-align: middle;
+            min-height: 150px;
+            border-radius: 150px 150px 0px 0px;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 150px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        footer p a {
+            color: #fff;
+            transition: all .3s;
+            position: relative;
+            z-index: 3;
+        }
+
+        footer p a:hover {
+            opacity: 0.75;
+        }
+
+        footer::before {
+            background: url(./assets/images/contact-dec-01.png);
+            position: absolute;
+            left: 30px;
+            transform: rotate(180deg);
+            opacity: 1;
+            bottom: 0;
+            width: 318px;
+            height: 119px;
+            content: '';
+            z-index: 2;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .name {
+            font-size: 36px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 600;
+            margin-right: 20px;
+            padding-right: 20px;
+            border-right: 1px solid rgba(250, 250, 250, 0.137);
+        }
+
+        .search {
+            background-color: rgba(255, 255, 255, 0.10);
+            height: 44px;
+            width: 250px;
+            border-radius: 23px;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 0px 20px 0px;
+        }
+
+        a.active {
+            background-color: #f1f0fe50;
+            padding: 5px 10px;
+            border-radius: 30px;
+
+        }
+
+        li a {
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        /* Style normal du header */
+        #main-header {
+            transition: all 0.3s ease;
+        }
+
+        /* Style quand le header devient sticky */
+        #main-header.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: #7a6ad8;
+            /* Ajoutez un fond si nécessaire */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Ombre optionnelle */
+            animation: fadeInDown 0.5s ease;
+        }
+
+        /* Animation optionnelle */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation du menu mobile */
+        #mobile-menu {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transform-origin: top center;
+            transition: height 1s;
+        }
+
+        #mobile-menu.open {
+            height: auto;
+            /* ou height: fit-content; selon les navigateurs */
+            min-height: 0px;
+            /* Hauteur minimale pour éviter les effets indésirables */
+        }
+
+        /* Transition pour l'icône hamburger */
+        #hamburger-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        #hamburger-btn.active i {
+            transform: rotate(90deg);
+        }
+
+        /* Empêcher le défilement du corps quand le menu est ouvert */
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        #mobile-menu {
+            max-height: 0;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        #mobile-menu.open {
+            max-height: 500px;
+            /* Une valeur suffisamment grande */
+        }
+
+        .about-us {
+            position: relative;
+            padding: 0px;
+            margin-top: 130px;
+        }
+
+        .about-us:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            width: 84%;
+            height: 100%;
+            background-color: #f1f0fe;
+            content: '';
+            border-top-left-radius: 500px;
+            border-bottom-left-radius: 500px;
+        }
+
+        .accordion-content {
+            transition:
+                max-height 0.4s ease-in-out,
+                opacity 0.3s ease-in-out 0.1s;
+            will-change: max-height, opacity;
+            overflow: hidden;
+        }
+
+        /* Pour les icônes */
+        .fa {
+            transition: transform 0.3s ease;
+        }
+
+        .fa-minus {
+            transform: rotate(180deg);
+        }
+        .search::placeholder{
+            color: white;
+            font-weight: 600;
+        }
+        .hover-service:hover img{
+transform: translateY(-10px);
+        }
+
+         /* Styles spécifiques pour le carousel de témoignages */
+      
+        
+        .testimonials-carousel .owl-nav {
+            position: absolute;
+            background: #000;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%);
+        }
+        
+        .testimonials-carousel .owl-nav button {
+            background: white !important;
+            color: #7a6ad8 !important;
+            width: 50px;
+            height: 50px;
+            border-radius: 50% !important;
+            margin: 5px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px !important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .testimonials-carousel .owl-nav button:hover {
+            background: #7a6ad8 !important;
+            color: white !important;
+        }
+        
+        @media (max-width: 768px) {
+            .testimonials-carousel .owl-nav {
+                display: none;
+                
+            }
+            .about-us::before,
+  .testimonials::before,
+  .contact-us::before {
+    display: none;
+  }
+        }
+
+           /* Styles pour le filtrage */
+    .course-card {
+        transition: all 0.4s ease;
+    }
+
+    .course-card.hidden {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        transform: scale(0.9);
+    }
+    
+    .filter.active {
+        color: #7a6ad8 !important;
+        font-weight: bold;
+    }
+    
+    .courses-list {
+        display: grid;
+        gap: 1.75rem;
+    }
+    
+    </style>
+</head>
+
+<body class="bg-white ">
+
+    <div class="main-banner relative">
+        <header id="main-header" class="absolute w-full flex justify-center z-50">
+            <div
+                class="nav-container py-4 sm:max-w-2xl md:max-w-6xl lg:max-w-7xl text-black flex justify-between w-full items-center px-4">
+                <div class="relative flex items-center">
+                    <span class="name text-white">SCHOLAR</span>
+                    <input type="text" class="search hidden lg:block outline-none" placeholder="Type Something">
+                    <i class="fa fa-search text-white absolute right-5 hidden lg:block"></i>
+                </div>
+
+                <div class="nav-section2">
+                    <nav class="nav-header">
+                        <!-- Bouton Hamburger -->
+                        <button id="hamburger-btn"
+                            class="block md:hidden text-white bg-none text-2xl focus:outline-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+
+                        <!-- Menu Desktop -->
+                        <ul class="list-none text-white grid grid-cols-6 items-center gap-2 text-sm hidden md:grid">
+                            <li class="nav-item"><a href="#home" class="active hover:text-gray-300">Home</a></li>
+                            <li class="nav-item hover:text-gray-300"><a href="#services">Services</a></li>
+                            <li class="nav-item hover:text-gray-300"><a href="#courses">Courses</a></li>
+                            <li class="nav-item hover:text-gray-300"><a href="#team">Team</a></li>
+                            <li class="nav-item hover:text-gray-300"><a href="#events">Events</a></li>
+                            <li class="nav-item hover:text-gray-300"><a href="#register">Register Now!</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+<section id="home" class="hero bg-[url('./assets/images/banner-bg.jpg')] bg-no-repeat bg-center bg-cover text-white pt-24 px-4 pb-48 rounded-br-[200px]">
+        <div class="max-w-xl md:max-w-7xl mx-auto relative rounded-2xl">
+            <!-- Owl Carousel container -->
+            <div class="owl-carousel owl-theme rounded-2xl">
+                <div class="item md:ml-36 rounded-2xl text-center md:text-left py-20 px-10 bg-no-repeat bg-cover bg-center"
+                    style="background: url('./assets/images/banner-item-01.jpg');">
+                    <div>
+                        <span class="bg-[#7a6ad8] text-white py-2 px-4 rounded-3xl">OUR COURSES</span>
+                        <h1 class="mt-12 text-4xl font-bold md:text-5xl">With Scholar Teachers, <br>Everything Is Easier</h1>
+                        <p class="mt-12 max-w-2xl text-[15px] font-semibold text-md">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Mollitia, eum.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Mollitia, eum.</p>
+                        <div class="md:flex md:gap-6">
+                            <button class="mt-12 btn-demo btn bg-white text-[#7a6ad8] rounded-3xl py-1 px-4">
+                                Request Demo
+                            </button>
+                            <div class="flex mt-12 justify-center md:justify-start items-center gap-5">
+                                <button class="btn bg-white text-[#7a6ad8] rounded-full w-14 h-14 tex-md justify-center items-center">
+                                    <i class="fa fa-play"></i>
+                                </button>
+                                <p class="font-semibold">What's Scholar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item md:ml-36  rounded-2xl text-center md:text-left py-20 px-10 bg-no-repeat bg-cover bg-center"
+                    style="background: url('./assets/images/banner-item-02.jpg');">
+                    <div>
+                        <span class="bg-[#7a6ad8] text-white py-2 px-4 rounded-3xl">BEST RESULT</span>
+                        <h1 class="mt-12 text-4xl font-bold md:text-5xl">Get the best result out of<br> your effort</h1>
+                        <p class="mt-12 max-w-2xl text-[15px] font-semibold text-md">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Mollitia, eum.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Mollitia, eum.</p>                        <div class="md:flex md:gap-6">
+                            <button class="mt-12 btn-demo btn bg-white text-[#7a6ad8] rounded-3xl py-2 px-4">
+                                Learn More
+                            </button>
+                            <div class="flex mt-12 justify-center md:justify-start items-center gap-5">
+                                <button class="btn bg-white text-[#7a6ad8] rounded-full w-14 h-14 tex-md justify-center items-center">
+                                    <i class="fa fa-play"></i>
+                                </button>
+                                <p class="font-semibold">Our Programs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="py-7 flex justify-center gap-5 absolute left-1/2 -translate-x-1/2 md:grid md:left-10 md:bottom-0 md:pb-0 w-max -bottom-5 z-10">
+                <button class="custom-prev flex bg-white/25 text-white w-14 h-14 text-xl rounded-full justify-center items-center">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="custom-next flex bg-white/25 text-white w-14 h-14 text-xl rounded-full justify-center items-center">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+        <section id="services">
+            <div
+                class="py-32 md:max-w-7xl mx-auto pb-0 px-4 flex flex-col md:flex-row justify-center flex-wrap gap-5 flex-grow flex-shrink-0 basis-auto">
+                <div class=" relative pr-20 py-20 mx-auto max-w-lg md:max-w-sm">
+                    <div class="inline-block mx-auto">
+                        <span class="bg-[#7a6ad8] hover-service -top-5 right-0 p-12 rounded-full absolute">
+                            <img src="./assets/images/service-01.png" class="transition duration-300">
+                        </span>
+                        <div class=" w-full p-5 pt-24 bg-[#f1f0fe] rounded-[25px] ">
+                            <span class="mt-4 font-semibold text-2xl">Onlive Degrees</span>
+                            <p class="my-4 text-[#4a4a4a]">Whenever you need free templates in HTML CSS, you just remember
+                                TemplateMo website.</p>
+                            <button class="bg-white my-4 py-2 px-4 text-[#7a6ad8] rounded-2xl">Read More</button>
+    
+    
+                        </div>
+                    </div>
+                </div>
+                <div class=" relative pr-20 mx-auto py-20 max-w-lg md:max-w-sm">
+                    <span class="bg-[#7a6ad8]  hover-service -top-5 right-0 p-12 rounded-full absolute">
+                        <img class="transition duration-300" src="./assets/images/service-02.png">
+                    </span>
+                    <div class=" w-full p-5 pt-24 bg-[#f1f0fe] rounded-[25px] ">
+                        <span class="mt-4 font-semibold text-2xl">Short Courses</span>
+                        <p class="my-4 text-[#4a4a4a]">You can browse free templates based on different tags such as
+                            digital marketing, etc.</p>
+                        <button class="bg-white my-4 py-2 px-4 text-[#7a6ad8] rounded-2xl">Read More</button>
+
+
+                    </div>
+                </div>
+
+                <div class=" relative pr-20 mx-auto pt-20 max-w-lg md:max-w-sm">
+                    <span class="bg-[#7a6ad8] hover-service -top-5 right-0 p-12 rounded-full absolute">
+                        <img class="transition duration-300" src="./assets/images/service-03.png">
+                    </span>
+                    <div class=" w-full p-5 pt-24 bg-[#f1f0fe] rounded-[25px] ">
+                        <span class="mt-4 font-semibold text-2xl">Web Experts</span>
+                        <p class="my-4 text-[#4a4a4a]">You can start learning HTML CSS by modifying free templates from
+                            our website too.</p>
+                        <button class="bg-white my-4 py-2 px-4 text-[#7a6ad8] rounded-2xl">Read More</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="about">
+            <div class="px-4 max-w-xl  pt-0 grid gap-20 md:grid-cols-2 md:max-w-5xl mx-auto">
+
+                <div class="bg-[#7a6ad8]  md:scale-110 max-w-[fit-content] p-10 rounded-[40px] grid ">
+
+                    <div class="w-full max-w-2xl mx-auto">
+                        <div class="space-y-4 grid items-center">
+                            <!-- Item 1 -->
+                            <div class="bg-white rounded-[30px] overflow-hidden transition-height duration-500">
+                                <button
+                                    class="accordion-toggle w-full flex justify-between items-center p-3 text-left hover:bg-gray-50 transition-colors duration-200">
+                                    <span class="text-sm font-medium text-gray-800">Where shall we begin?</span>
+                                    <i
+                                        class="bg-[#7a6ad8] rounded-full w-8 h-8 fa fa-minus items-center flex justify-center text-white transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="accordion-content max-h-0 opacity-0">
+                                    <div class="p-4 md:p-6 pt-0 text-gray-600">
+                                        <p class="text-xs">Dolor <b>almesit amet</b>, consectetur adipiscing elit, sed doesn't eiusmod tempor
+                                            incididunt ut labore consectetur <code class="inline text-red-400">adipiscing</code> elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                            gravida.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="bg-white rounded-[30px]  overflow-hidden ">
+                                <button
+                                    class="accordion-toggle w-full flex justify-between items-center p-3 text-left hover:bg-gray-50 transition-colors duration-200">
+                                    <span class="text-sm font-medium text-gray-800">How do we work together?</span>
+                                    <i
+                                        class="bg-[#7a6ad8] rounded-full w-8 h-8 fa fa-plus items-center flex justify-center text-white transform transition-transform duration-300"></i>
+
+                                </button>
+                                <div class="accordion-content max-h-0 opacity-0">
+                                    <div class="p-4 md:p-6 pt-0 text-gray-600">
+                                        <p class="text-xs">Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor
+                                            incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                            gravida.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="bg-white rounded-[30px]  overflow-hidden">
+                                <button
+                                    class="accordion-toggle w-full flex justify-between items-center p-3 text-left hover:bg-gray-50 transition-colors duration-200">
+                                    <span class="text-sm font-medium text-gray-800">Why SCHOLAR is the best?</span>
+                                    <i
+                                        class="bg-[#7a6ad8] rounded-full w-8 h-8 fa fa-plus items-center flex justify-center text-white transform transition-transform duration-300"></i>
+
+                                </button>
+                                <div class="accordion-content max-h-0 opacity-0">
+                                    <div class="p-4 md:p-6 pt-0 text-gray-600">
+                                        <p class="text-xs">There are more than one hundred responsive HTML templates to choose from
+                                            TemplateMo website. You can browse by different tags or categories.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Item 3 -->
+                            <div class="bg-white rounded-[30px] overflow-hidden ">
+                                <button
+                                    class="accordion-toggle w-full flex justify-between items-center p-3 text-left hover:bg-gray-50 transition-colors duration-200">
+                                    <span class="text-sm font-medium text-gray-800">Do we get the best support?</span>
+
+                                    <i
+                                        class="bg-[#7a6ad8] rounded-full w-8 h-8 fa fa-plus items-center flex justify-center text-white transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="accordion-content max-h-0 opacity-0">
+                                    <div class="p-4 md:p-6 pt-0 text-gray-600">
+                                        <p class="text-xs">You can also search on Google with specific keywords such as templatemo
+                                            business templates, templatemo gallery templates, admin dashboard
+                                            templatemo, 3-column templatemo, etc.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="text py-10 flex  items-center">
+                    <div style="height: fit-content;">
+                        <span class="text-[#7a6ad8]  font-semibold">ABOUT US</span>
+                        <h3 class="mt-[30px] font-bold text-black text-3xl">What Make Us The Best Academy Online?</h3>
+                        <p class="mt-8 text-[#4a4a4a]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                            gravid risus commodo.
+                            Discover More</p>
+                        <button class="text-white bg-[#7a6ad8] mt-8 rounded-3xl py-2 px-4">Discover More</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+       <section class="latest" id="courses">
+    <div class="px-4 py-20 grid justify-center">
+        <div class="text-center">
+            <span class="text-[#7a6ad8] text-center text-xl font-semibold">Latest Courses</span>
+            <h3 class="mt-[15px] mb-10 font-bold text-black text-4xl">Latest Courses</h3>
+        </div>
+
+        <div class="bg-[#f1f0fe] w-[fit-content] m-auto cursor-pointer text-sm text-gray-700 rounded-3xl font-semibold py-4 mt-6 px-8 flex flex-wrap gap-4 text-center justify-center">
+            <span class="hover:text-[#7a6ad8] filter active" data-tag="all">Show All</span>
+            <span class="hover:text-[#7a6ad8] filter" data-tag="webdesign">Webdesign</span>
+            <span class="hover:text-[#7a6ad8] filter" data-tag="development">Development</span>
+            <span class="hover:text-[#7a6ad8] filter" data-tag="wordpress">Wordpress</span>
+        </div>
+
+        <div class="grid gap-7 w-full mt-20  md:grid-cols-2 lg:grid-cols-3 courses-list">
+            <div class="course-card group webdesign relative bg-[#f1f0fe] rounded-3xl overflow-hidden">
+                <img src="./assets/images/course-01.jpg" class="rounded-3xl w-full">
+                <div class="px-8 py-5">
+                    <span class="text-[#7a6ad8] my-4">Stella Blair</span>
+                    <p class="font-semibold text-2xl mb-4 transition-colors duration-300 group-hover:text-[#7a6ad8]">
+                        Learn Web Design
+                    </p>
+                </div>
+                <span class="bg-[#f1f0fe]/95 py-2 px-4 rounded-3xl absolute top-7 left-7 text-[#7a6ad8]">WEBDESIGN</span>
+                <span class="transform transition-transform duration-300 group-hover:scale-110 bg-[#7a6ad8]/95 pl-6 pb-6 pt-16 pr-12 rounded-[50%] text-3xl font-bold absolute -top-12 -right-7 text-[#f1f0fe]"><sup>$</sup>160</span>
+            </div>
+
+            <div class="course-card group development relative bg-[#f1f0fe] rounded-3xl overflow-hidden">
+                <img src="./assets/images/course-02.jpg" class="rounded-3xl w-full">
+                <div class="px-8 py-5">
+                    <span class="text-[#7a6ad8] my-4">Cindy Walker</span>
+                    <p class="font-semibold text-2xl mb-4 transition-colors duration-300 group-hover:text-[#7a6ad8]">
+                        Web Development Tips
+                    </p>
+                </div>
+                <span class="bg-[#f1f0fe]/95 py-2 px-4 rounded-3xl absolute top-7 left-7 text-[#7a6ad8]">DEVELOPMENT</span>
+                <span class="transform transition-transform duration-300 group-hover:scale-110 bg-[#7a6ad8]/95 pl-6 pb-6 pt-16 pr-12 rounded-[50%] text-3xl font-bold absolute -top-12 -right-7 text-[#f1f0fe]"><sup>$</sup>340</span>
+            </div>
+
+            <div class="course-card group wordpress relative bg-[#f1f0fe] rounded-3xl overflow-hidden">
+                <img src="./assets/images/course-03.jpg" class="rounded-3xl w-full">
+                <div class="px-8 py-5">
+                    <span class="text-[#7a6ad8] my-4">David Hutson</span>
+                    <p class="font-semibold text-2xl mb-4 transition-colors duration-300 group-hover:text-[#7a6ad8]">
+                        Latest Web Trends
+                    </p>
+                </div>
+                <span class="bg-[#f1f0fe]/95 py-2 px-4 rounded-3xl absolute top-7 left-7 text-[#7a6ad8]">WORDPRESS</span>
+                <span class="transform transition-transform duration-300 group-hover:scale-110 bg-[#7a6ad8]/95 pl-6 pb-6 pt-16 pr-12 rounded-[50%] text-3xl font-bold absolute -top-12 -right-7 text-[#f1f0fe]"><sup>$</sup>640</span>
+            </div>
+
+            <div class="course-card group development relative bg-[#f1f0fe] rounded-3xl overflow-hidden">
+                <img src="./assets/images/course-04.jpg" class="rounded-3xl w-full">
+                <div class="px-8 py-5">
+                    <span class="text-[#7a6ad8] my-4">Stella Blair</span>
+                    <p class="font-semibold text-2xl mb-4 transition-colors duration-300 group-hover:text-[#7a6ad8]">
+                        Online Learning Steps
+                    </p>
+                </div>
+                <span class="bg-[#f1f0fe]/95 py-2 px-4 rounded-3xl absolute top-7 left-7 text-[#7a6ad8]">DEVELOPMENT</span>
+                <span class="transform transition-transform duration-300 group-hover:scale-110 bg-[#7a6ad8]/95 pl-6 pb-6 pt-16 pr-12 rounded-[50%] text-3xl font-bold absolute -top-12 -right-7 text-[#f1f0fe]"><sup>$</sup>450</span>
+            </div>
+
+            <div class="course-card group wordpress relative bg-[#f1f0fe] rounded-3xl overflow-hidden">
+                <img src="./assets/images/course-05.jpg" class="rounded-3xl w-full">
+                <div class="px-8 py-5">
+                    <span class="text-[#7a6ad8] my-4">Sophia Rose</span>
+                    <p class="font-semibold text-2xl mb-4 transition-colors duration-300 group-hover:text-[#7a6ad8]">
+                        Be a WordPress Master
+                    </p>
+                </div>
+                <span class="bg-[#f1f0fe]/95 py-2 px-4 rounded-3xl absolute top-7 left-7 text-[#7a6ad8]">WORDPRESS</span>
+                <span class="transform transition-transform duration-300 group-hover:scale-110 bg-[#7a6ad8]/95 pl-6 pb-6 pt-16 pr-12 rounded-[50%] text-3xl font-bold absolute -top-12 -right-7 text-[#f1f0fe]"><sup>$</sup>320</span>
+            </div>
+
+            <div class="course-card group webdesign relative bg-[#f1f0fe] rounded-3xl overflow-hidden">
+                <img src="./assets/images/course-06.jpg" class="rounded-3xl w-full">
+                <div class="px-8 py-5">
+                    <span class="text-[#7a6ad8] my-4">David Hutson</span>
+                    <p class="font-semibold text-2xl mb-4 transition-colors duration-300 group-hover:text-[#7a6ad8]">
+                        Full Stack Developer
+                    </p>
+                </div>
+                <span class="bg-[#f1f0fe]/95 py-2 px-4 rounded-3xl absolute top-7 left-7 text-[#7a6ad8]">WEBDESIGN</span>
+                <span class="transform transition-transform duration-300 group-hover:scale-110 bg-[#7a6ad8]/95 pl-6 pb-6 pt-16 pr-12 rounded-[50%] text-3xl font-bold absolute -top-12 -right-7 text-[#f1f0fe]"><sup>$</sup>240</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="fun-facts">
+            <div class="grid gap-5 text-white md:grid-cols-4 m-auto max-w-5xl">
+                <div class="text-center py-7">
+                    <h2 class="font-bold text-4xl counter" data-number="150">150</h2>
+                    <p>Happy Students</p>
+                </div>
+
+                <div class="text-center py-7">
+                    <h2 class="font-bold text-4xl counter"  data-number="804">804</h2>
+                    <p>Course Hours</p>
+                </div>
+
+                <div class="text-center py-7">
+                    <h2 class="font-bold text-4xl counter"  data-number="50">50</h2>
+                    <p>Employed Students</p>
+                </div>
+
+                <div class="text-center py-7">
+                    <h2 class="font-bold text-4xl counter"  data-number="15">15</h2>
+                    <p>Year Experience</p>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <div class="grid gap-4 max-w-xl px-8 py-32 md:grid-cols-2 lg:grid-cols-4  md:max-w-7xl m-auto">
+                <div class="relative mt-36 group">
+                    <img src="./assets/images/member-01.jpg"
+                        class="transform transition-top duration-200 group-hover:-top-32 absolute -top-28 left-1/2 -translate-x-1/2 rounded-full h-30 w-30">
+
+                    <div class="bg-[#f1f0fe] text-center pt-36 rounded-3xl pb-7 px-10">
+                        <span class="text-[#7a6ad8]">UX Teacher</span>
+                        <h4 class="font-semibold text-xl">Sophia Rose</h4>
+
+                        <div class="flex gap-4 justify-center w-full py-4">
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-facebook transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-twitter transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-linkedin transform transition duration-300 hover:text-white"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="relative mt-36 group">
+                    <img src="./assets/images/member-02.jpg"
+                        class="transform transition-top duration-200 group-hover:-top-32 absolute -top-28 left-1/2 -translate-x-1/2 rounded-full h-30 w-30">
+
+                    <div class="bg-[#f1f0fe] text-center pt-36 rounded-3xl pb-7 px-10">
+                        <span class="text-[#7a6ad8]">Graphic Teacher
+                        </span>
+                        <h4 class="font-semibold text-xl">Cindy Walker
+                        </h4>
+
+                        <div class="flex gap-4 justify-center w-full py-4">
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-facebook transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-twitter transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-linkedin transform transition duration-300 hover:text-white"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="relative mt-36 group">
+                    <img src="./assets/images/member-03.jpg"
+                        class="transform transition-top duration-200 group-hover:-top-32 absolute -top-28 left-1/2 -translate-x-1/2 rounded-full h-30 w-30">
+
+                    <div class="bg-[#f1f0fe] text-center pt-36 rounded-3xl pb-7 px-10">
+                        <span class="text-[#7a6ad8]">Full Stack Master
+                        </span>
+                        <h4 class="font-semibold text-xl">David Hutson
+                        </h4>
+
+                        <div class="flex gap-4 justify-center w-full py-4">
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-facebook transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-twitter transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-linkedin transform transition duration-300 hover:text-white"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="relative mt-36 group">
+                    <img src="./assets/images/member-04.jpg"
+                        class="transform transition-top duration-200 group-hover:-top-32 absolute -top-28 left-1/2 -translate-x-1/2 rounded-full h-30 w-30">
+
+                    <div class="bg-[#f1f0fe] text-center pt-36 rounded-3xl pb-7 px-10">
+                        <span class="text-[#7a6ad8]">Digital Animator
+                        </span>
+                        <h4 class="font-semibold text-xl">Stella Blair
+                        </h4>
+
+                        <div class="flex gap-4 justify-center w-full py-4">
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-facebook transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-twitter transform transition duration-300 hover:text-white"></i>
+                            </span>
+                            <span
+                                class="bg-white h-10 w-10 rounded-full flex transform transition duration-300 hover:bg-[#7a6ad8] text-[#7a6ad8] justify-center items-center">
+                                <i class="fa-brands fa-linkedin transform transition duration-300 hover:text-white"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<section class="testimonials py-10" id="">
+        <div class="px-10 overflow-hidden  grid gap-20 md:grid md:grid-cols-2 gap-2 m-auto max-w-7xl">
+            <div class="w-full relative overflow-hidden">
+                <!-- Owl Carousel Container -->
+                <div style="width: 100%;" class="z-10 rounded-3xl testimonials-carousel  overflow-hidden owl-carousel owl-theme">
+                    <!-- Témoignage 1 -->
+                    <div class="item w-full">
+                        <div class="bg-[#7a6ad8] w-full rounded-3xl p-10 text-white/90 leading-loose text-xl">
+                            <em>
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat libero ea quibusdam harum
+                                rerum, alias tenetur est provident maxime quia."
+                            </em>
+                            <div class="flex gap-5 mt-12 items-center">
+                                <img src="./assets/images/testimonial-author.jpg" class="rounded-full max-w-16 h-16 object-cover">
+                                <div class="text-white inline-block">
+                                    <span class="text-md">
+                                        Full Stack Master
+                                    </span><br>
+                                    <span class="font-semibold">
+                                        Claude David
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item w-full">
+                        <div class="bg-[#7a6ad8] w-full rounded-3xl p-10 text-white/90 leading-loose text-xl">
+                            <em>
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat libero ea quibusdam harum
+                                rerum, alias tenetur est provident maxime quia."
+                            </em>
+                            <div class="flex gap-5 mt-12 items-center">
+                                <img src="./assets/images/testimonial-author.jpg" class="rounded-full max-w-16 h-16 object-cover">
+                                <div class="text-white inline-block">
+                                    <span class="text-md">
+                                        Full Stack Master
+                                    </span><br>
+                                    <span class="font-semibold">
+                                        Claude David
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                 
+                    
+                </div>
+                
+            </div>
+            
+            <div class="flex items-center relative">
+                <div>
+                    <span class="text-[#7a6ad8] text-center text-sm font-semibold">TESTIMONIALS</span>
+                    <h3 class="mt-[30px] font-bold text-black text-4xl">What They Say About Us?</h3>
+                    <p class="py-4 text-gray-500">
+                        You can search free CSS templates on Google using different keywords such as templatemo
+                        portfolio, templatemo gallery, templatemo blue color, etc.
+                    </p>
+                </div>
+                <div class="hidden md:grid z-20 absolute md:top-1/2 md:-translate-y-1/2 md:-left-28 md:flex md:gap-5 custom-testimonial-nav">
+                    <button class=" border custom-testimonial-prev flex bg-white text-[#7a6ad8] w-14 h-14 text-xl rounded-full justify-center items-center">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button class="border custom-testimonial-next flex bg-white text-[#7a6ad8] w-14 h-14 text-xl rounded-full justify-center items-center">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+
+        <section class=" py-10" id="events">
+            <div class="px-4 grid max-w-xl md:max-w-7xl mx-auto">
+
+                <div class="text-center">
+                    <span class="text-[#7a6ad8] text-center text-xl font-semibold">SCHEDULE</span>
+                    <h3 class="mt-[30px] font-bold text-black text-4xl">Upcoming Events</h3>
+                </div>
+                <div class="grid mt-20 gap-20">
+
+                    <div class="bg-[#f1f0fe] rounded-3xl md:flex md:flex-col-3 md:gap-12 p-10 md:p-0 md:items-center relative">
+                        <img src="./assets/images/event-01.jpg" class="z-10 rounded-3xl w-full relative  md:ml-16 md:transform md:scale-[1.20] -top-20 md:static md:w-1/4 md:max-w-[200px]">
+                        <div class="relative -top-10 md:static border-b md:border-none border-[#ccc] md:w-1/4">
+                            <span class="bg-white text-[#7a6ad8] rounded-3xl px-4 py-2 ">WEB DESIGN</span>
+                            <h3 class="font-semibold text-3xl my-4">UI Best Practices</h3>
+                        </div>
+                        <div class="grid grid-cols-3 gap-8 justify-between md:w-1/2 md:pr-28">
+                            <div class="text-left">
+                                <span class="text-gray-500 font-semibold">Date:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">16 Feb 2036</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-gray-500 font-semibold">Duration:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">22 Hours</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-gray-500 font-semibold">Price:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">$120</span>
+                            </div>
+                        </div>
+                        <span
+                            class="bg-[#7a6ad8] text-white absolute flex items-center text-xl pl-5 py-10 pr-5 rounded-tl-full rounded-bl-full bottom-[150px] md:top-1/2 md:transform md:-translate-y-1/2 right-0">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+
+
+                    <div class="bg-[#f1f0fe] rounded-3xl md:flex md:flex-col-3 md:gap-12 p-10 md:p-0 md:items-center relative">
+                        <img src="./assets/images/event-02.jpg" class="z-10 rounded-3xl w-full relative  md:ml-16 md:transform md:scale-[1.20] -top-20 md:static md:w-1/4 md:max-w-[200px]">
+                        <div class="relative -top-10 md:static pt-8 border-b md:border-none border-[#ccc] md:w-1/4">
+                            <span class="bg-white text-[#7a6ad8] rounded-3xl px-4 py-2 ">FRONT END</span>
+                            <h3 class="font-semibold text-3xl my-4">New Design Trend
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-3 gap-8 justify-between md:w-1/2 md:pr-28">
+                            <div class="text-left">
+                                <span class="text-gray-500 font-semibold">Date:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">24 Feb 2036</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-gray-500 font-semibold">Duration:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">30 Hours</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-gray-500 font-semibold">Price:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">$320</span>
+                            </div>
+                        </div>
+                         <span
+                         class="bg-[#7a6ad8] text-white absolute flex items-center text-xl pl-5 py-10 pr-5 rounded-tl-full rounded-bl-full bottom-[150px] md:top-1/2 md:transform md:-translate-y-1/2 right-0">
+                         <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+
+
+                    <div class="bg-[#f1f0fe] rounded-3xl md:flex md:flex-col-3 md:gap-12 p-10 md:p-0 md:items-center relative">
+                        <img src="./assets/images/event-03.jpg" class="z-10 rounded-3xl w-full relative  md:ml-16 md:transform md:scale-[1.20] -top-20 md:static md:w-1/4 md:max-w-[200px]">
+                        <div class="relative -top-10 md:static border-b md:border-none border-[#ccc] md:w-1/4">
+                            <span class="bg-white text-[#7a6ad8] rounded-3xl px-4 py-2 ">FULL STACK</span>
+                            <h3 class="font-semibold text-3xl my-4">Web Programming</h3>
+                        </div>
+                        <div class="grid grid-cols-3 gap-8 justify-between md:w-1/2 md:pr-28">
+                            <div class="text-left">
+                                <span class="text-gray-500 font-semibold">Date:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">12 Mar 2036</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-gray-500 font-semibold">Duration:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">48 Hours</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-gray-500 font-semibold">Price:</span><br>
+                                <span class="text-[#7a6ad8] font-semibold">$440</span>
+                            </div>
+                        </div>
+                         <span
+                         class="bg-[#7a6ad8] text-white absolute flex items-center text-xl pl-5 py-10 pr-5 rounded-tl-full rounded-bl-full bottom-[150px] md:top-1/2 md:transform md:-translate-y-1/2 right-0">
+                         <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us" id="register">
+            <div class="px-4 max-w-xl grid md:grid-cols-2 gap-5 md:max-w-7xl mx-auto">
+                <div>
+
+
+                    <div class="">
+                        <span class="text-[#7a6ad8]  text-lg font-semibold">CONTACT US</span>
+                        <h3 class="mt-[30px] font-bold text-black text-4xl">Feel Free To Contact Us<br>Anytime</h3>
+                        <p class="text-gray-500 my-5">
+                            Thank you for choosing our templates. We provide you best CSS templates at absolutely 100%
+                            free
+                            of charge. You may support us by sharing our website to your friends.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl bg-[#f1f0fe] md:bg-white py-10 px-4 pl-24 relative overflow-x-hidden">
+                        <div
+                            class="text-white text-left flex flex-col justify-center pr-0 rounded-tr-full rounded-br-full bg-[#7a6ad8] h-full w-20 absolute pl-1 top-0 -left-0 ">
+                            OFF<br>
+                            <span class="font-bold text-white text-2xl">50%</span>
+                        </div>
+
+                        <span class="text-black text-xl">VALIDE: <span class="font-semibold text-[#7a6ad8]">24 APRIL
+                                2036</span></span><br>
+                        <span class="font-semibold text-xl text-black">Special Offer <span
+                                class="text-[#7a6ad8]">50%</span>
+                            OFF!</span>
+                        <span
+                            class="font-semibold text-lg text-[#f1f0fe] bg-[#7a6ad8] absolute px-3 right-5 py-2 top-5 rounded-full"><i
+                                class="fa fa-chevron-right"></i></span>
+                    </div>
+
+
+                </div>
+                <div class="contact-us-content p-0">
+                    <form id="contact-form" class="m-0 p-0">
+                        <input type="text" placeholder="Your Name..." class="w-full">
+                        <input type="text" placeholder="Your E-mail..." class="">
+                        <textarea placeholder="Your message"></textarea>
+                        <button>Send Message Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div>
+            <p class="px-10" style="word-wrap: break-word;">Copyright &copy; 2036 Scholar Organization. All rights
+                reserved. Design: TemplateMo</p>
+        </div>
+    </footer>
+    <!-- Menu Mobile -->
+    <div id="mobile-menu"
+        class="fixed bg-[#f1f0fe] w-full rounded-br-xl rounded-bl-xl top-20 left-0 h-0 overflow-hidden transition-all duration-300 ease-in-out z-40 md:hidden">
+        <div class=""> <!-- Conteneur interne pour le padding -->
+            <ul class="w-full">
+                <li
+                    class="py-4 w-full px-2 active text-center hover:bg-white hover:text-[#7a6ad8] font-semibold rounded-br-xl rounded-bl-xl border-b">
+                    <a href="#home">Home</a>
+                </li>
+                <li
+                    class="py-4 w-full px-2 text-center hover:bg-white hover:text-[#7a6ad8] font-semibold rounded-br-xl rounded-bl-xl border-b">
+                    <a href="#services">Services</a>
+                </li>
+                <li
+                    class="py-4 w-full px-2 text-center hover:bg-white hover:text-[#7a6ad8] font-semibold rounded-br-xl rounded-bl-xl border-b">
+                    <a href="#courses">Courses</a>
+                </li>
+                <li
+                    class="py-4 w-full px-2 text-center hover:bg-white hover:text-[#7a6ad8] font-semibold rounded-br-xl rounded-bl-xl border-b">
+                    <a href="#team">Team</a>
+                </li>
+                <li
+                    class="py-4 w-full px-2 text-center hover:bg-white hover:text-[#7a6ad8] font-semibold rounded-br-xl rounded-bl-xl border-b">
+                    <a href="#events">Events</a>
+                </li>
+                <li
+                    class="py-4 w-full px-2 text-center hover:bg-white hover:text-[#7a6ad8] font-semibold rounded-br-xl rounded-bl-xl border-b">
+                    <a href="#register">Register Now!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden"></div>
+    <!-- jQuery (requis pour Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
