@@ -1,4 +1,3 @@
-```markdown
 # 🎓 Dépôt Académique Numérique
 
 ## 🌐 Concept
@@ -25,6 +24,5 @@ Principalement orienté vers:
 ```
 
 ## 📬 Contact
-[hermes.hounkonnou@institution.edu](mailto:agapethounk@gmail.com)  
+[agapethounk@gmail.com](mailto:agapethounk@gmail.com)  
 [Page académique](https://hermsprojects.vercel.app/)
-```
