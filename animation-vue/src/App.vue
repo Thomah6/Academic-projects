@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 import MyStyle from './styles/Style.vue'
 import Transform from './Transform.vue'
 import Transitionn from './Transition.vue'
